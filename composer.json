@@ -19,7 +19,9 @@
     },
     "require-dev": {
         "phpspec/phpspec": "^3.4",
-        "phpunit/phpunit": "^5.7.10"
+        "phpunit/phpunit": "^5.7.10",
+        "guzzlehttp/guzzle": "^6.4",
+        "paquettg/php-html-parser": "^2.1"
     },
     "autoload": {
         "psr-4": {
@@ -28,7 +30,8 @@
     },
     "autoload-dev": {
         "psr-4": {
-            "League\\Flysystem\\Stub\\": "stub/"
+            "League\\Flysystem\\Stub\\": "stub/",
+            "League\\Flysystem\\OOTB\\Edge\\": "bin/src/edge"
         },
         "files": [
           "tests/PHPUnitHacks.php"
